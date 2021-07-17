@@ -1,11 +1,21 @@
 
 public class Example {
+    public static void main(String[] args){
+        long sumIndividualSquared = 0;
+        long sumWholeSquared = 0;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+        for(int i = 1 ; i <= 100; i++){
+            sumIndividualSquared += i*i;
+        }
 
-	}
-		
+        for( int i = 1 ; i <=100; i++ ){
+            sumWholeSquared += i;
+        }
+        System.out.println("The diference is :" + ((sumWholeSquared
+                * sumWholeSquared) - sumIndividualSquared));
+
+    }
 
 }
+		
+
